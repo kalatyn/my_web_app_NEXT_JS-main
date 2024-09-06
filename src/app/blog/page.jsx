@@ -7,10 +7,6 @@ async function getData() {
     cache: 'no-store',
   })
 
-  if (!res) {
-    console.error('Failed to fetch data')
-  }
-
   return res.json()
 }
 
